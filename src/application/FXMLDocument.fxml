@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="426.0" prefWidth="565.0" style="-fx-background-color: lightgrey; -fx-border-color: black; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXMLDocumentController">
+   <children>
+      <TextField fx:id="value" alignment="CENTER" layoutX="62.0" layoutY="147.0" prefHeight="33.0" prefWidth="420.0" text="0" />
+      <Label contentDisplay="BOTTOM" layoutX="20.0" layoutY="105.0" prefHeight="32.0" prefWidth="102.0" text="VALUE:">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font></Label>
+      <Button id="conv" alignment="CENTER" layoutX="62.0" layoutY="266.0" mnemonicParsing="false" onAction="#convert" prefHeight="54.0" prefWidth="420.0" text="CONVERT">
+         <font>
+            <Font name="System Bold Italic" size="31.0" />
+         </font></Button>
+      <TextField alignment="CENTER" layoutX="16.0" layoutY="14.0" prefHeight="78.0" prefWidth="536.0" text="UNIVERSAL LENGTH CONVERTER">
+         <font>
+            <Font name="System Bold Italic" size="31.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="63.0" layoutY="188.0" text="FROM">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="322.0" layoutY="188.0" text="TO">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="cb1" layoutX="62.0" layoutY="220.0" prefHeight="26.0" prefWidth="159.0" promptText="Select" visibleRowCount="100">
+       <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="DecaMeter" />
+          <String fx:value="HectoMeter" />
+          <String fx:value="KiloMeter" />
+          <String fx:value="MegaMeter" />
+          <String fx:value="GigaMeter" />
+          <String fx:value="TeraMeter" />
+          <String fx:value="PetaMeter" />
+          <String fx:value="ExaMeter" />
+          <String fx:value="ZetaMeter" />
+          <String fx:value="YottaMeter" />
+          <String fx:value="DeciMeter" />
+          <String fx:value="CentiMeter" />
+          <String fx:value="MilliMeter" />
+          <String fx:value="MicroMeter" />
+          <String fx:value="NanoMeter" />
+          <String fx:value="PicoMeter" />
+          <String fx:value="FemtoMeter" />
+          <String fx:value="AttoMeter" />
+          <String fx:value="ZeptoMeter" />
+          <String fx:value="YoctoMeter" />
+          <String fx:value="Fermi" />
+          <String fx:value="Angström" />
+          <String fx:value="Inch" />
+          <String fx:value="Foot" />
+          <String fx:value="Yard" />
+          <String fx:value="Mile" />
+          <String fx:value="Fathom" />
+          <String fx:value="Nautical Mile" />
+          <String fx:value="Electron" />
+          <String fx:value="Earth Radius" />
+          <String fx:value="Lunar Radius" />
+          <String fx:value="Light Year" />
+          <String fx:value="Parsec" />
+          <String fx:value="Astronomical Unit" />
+          <String fx:value="Human Hair" />
+        </FXCollections>
+      </items>
+    </ComboBox>    
+      <ComboBox fx:id="cb2" layoutX="322.0" layoutY="220.0" prefHeight="26.0" prefWidth="159.0" promptText="Select" visibleRowCount="100">
+       <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="DecaMeter" />
+          <String fx:value="HectoMeter" />
+          <String fx:value="KiloMeter" />
+          <String fx:value="MegaMeter" />
+          <String fx:value="GigaMeter" />
+          <String fx:value="TeraMeter" />
+          <String fx:value="PetaMeter" />
+          <String fx:value="ExaMeter" />
+          <String fx:value="ZetaMeter" />
+          <String fx:value="YottaMeter" />
+          <String fx:value="DeciMeter" />
+          <String fx:value="CentiMeter" />
+          <String fx:value="MilliMeter" />
+          <String fx:value="MicroMeter" />
+          <String fx:value="NanoMeter" />
+          <String fx:value="PicoMeter" />
+          <String fx:value="FemtoMeter" />
+          <String fx:value="AttoMeter" />
+          <String fx:value="ZeptoMeter" />
+          <String fx:value="YoctoMeter" />
+          <String fx:value="Meter" />
+          <String fx:value="Angström" />
+          <String fx:value="Inch" />
+          <String fx:value="Foot" />
+          <String fx:value="Yard" />
+          <String fx:value="Mile" />
+          <String fx:value="Fathom" />
+          <String fx:value="Nautical Mile" />
+          <String fx:value="Electron" />
+          <String fx:value="Earth Radius" />
+          <String fx:value="Lunar Radius" />
+          <String fx:value="Light Year" />
+          <String fx:value="Parsec" />
+          <String fx:value="Astronomical Unit" />
+          <String fx:value="Human Hair" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+      <Button id="conv" alignment="CENTER" layoutX="62.0" layoutY="344.0" mnemonicParsing="false" onAction="#history" prefHeight="54.0" prefWidth="420.0" text="HISTORY">
+         <font>
+            <Font name="System Bold Italic" size="31.0" />
+         </font>
+      </Button>     
+   </children>
+   <effect>
+      <Glow />
+   </effect>
+</AnchorPane>
